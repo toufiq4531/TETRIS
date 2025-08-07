@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    background: #0f0f0f;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    display: flex;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+}
+
+canvas {
+    border: 2px solid #0ff;
+    background-color: #111;
+}
+
+.side-panel {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.scoreboard,
+.next-block,
+.controls {
+    background: #111;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #0ff;
+}
+
+.scoreboard h2,
+.next-block h2,
+.controls h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #0ff;
+    border-bottom: 1px solid #0ff;
+    padding-bottom: 5px;
+}
+
+.controls p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+#restartBtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-family: 'Orbitron', sans-serif;
+    background: #0ff;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0ff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    z-index: 999;
+}
+
+#restartBtn:hover {
+    background: #00cccc;
+    box-shadow: 0 0 20px #00cccc;
+}
